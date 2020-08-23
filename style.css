@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.calculator {
+    bottom: 15%;
+    width: 54%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.btn{
+   
+    color: coral;
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    border-style: double;
+    background-color: black;
+    border-color: coral;
+    border-radius: 10px;
+    padding: 2px;
+    transition: 0.4s;
+    
+}
+.hover{
+    transform: scale(1.3);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.btn:hover{
+    transform: scale(1.3);
+    border-radius: 20px;
+   
+    
+}
+.btn:focus{
+   outline: 0;
+}
+
+.display{
+    position: relative;
+    display: block;
+    width: 84%;
+    height: 12%;
+    left: 10%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+}
+
+.numPad{
+    position: absolute;
+   display: block;
+    left: 26.5%;
+}
+span{
+    
+    font-size: x-large;
+    color: coral;
+}
+.subDisplay{
+    color: coral;
+    font-size: large;
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+
+}
+.header{
+    display: block;
+    text-align: center;
+
+}
+.numPad_2{
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 2%;
+
+}
+.container{
+    font-family: fantasy , sans-serif;
+        position: absolute;
+        display: grid;
+        width: 60%;
+        height: 90%;
+        left: 20%;
+       
+        margin-top: 0%;
+}
+@media only screen and (min-width: 600px) {
+   
+    .numPad{
+        position: relative;
+        width: 50%;
+    }
+    .numPad_2{
+        position: relative;
+        display: inline-block;
+        
+    
+    }
+}
+@media only screen and (max-width: 600px) {
+    .numPad{
+        position: relative;
+        width: 70%;
+        left: 16%;
+    }
+    .numPad_2{
+       display: inline;
+        
+    }
+    body{
+         background-image: url(m.jpg);
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+    
+    
+    
+   
+}
