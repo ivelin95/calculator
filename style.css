@@ -90,7 +90,7 @@ span{
 .numPad_2{
     position: relative;
     display: block;
-    top: 50%;
+/*     top: 50%; */
     left: 2%;
 
 }
